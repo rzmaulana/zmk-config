@@ -49,7 +49,7 @@
    &kp ESC  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &trans &trans &kp DEL
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &trans &kp UP &trans
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp LEFT &kp DOWN &kp RIGHT
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                    	     &kp LGUI &trans   &kp SPACE   &kp RET      &kp KP_N0  &kp RALT
                         >;
                 };
         };
