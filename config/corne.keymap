@@ -46,7 +46,7 @@
 // | SHFT | CTZ |  (  |  )  |  [  |  ]  |   |  1  |  2  |  3  | LFT | DWN | RGT  |
 //                    | ALT  |    | ENT |   | SPC |  0  | ALT |
                         bindings = <
-   &kp ESC      &kp LC(x)       &kp LC(c)       &kp LC(v)       &kp LC(a)       &kp PSCRN       &kp KP_N7 &kp KP_N8  &kp KP_N9 &trans &trans &kp DEL
+   &kp ESC      &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LC(A)       &kp PSCRN       &kp KP_N7 &kp KP_N8  &kp KP_N9 &trans &trans &kp DEL
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp KP_N4 &kp KP_N5 &kp KP_N6        &trans &kp UP &kp BSLH
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp KP_N1 &kp KP_N2  &kp KP_N3        &kp LEFT &kp DOWN &kp RIGHT
                     	     &trans &trans   &trans   &trans       &kp KP_N0  &trans
