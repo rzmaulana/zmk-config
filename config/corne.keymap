@@ -10,9 +10,6 @@
 
 / 
  
-
-{
-
 behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -23,7 +20,9 @@ behaviors {
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-    };    
+    };   
+/
+ 
 {
     
 
