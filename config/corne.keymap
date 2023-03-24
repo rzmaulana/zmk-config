@@ -41,7 +41,7 @@
 
                 raise_layer {
  // -----------------------------------------------------------------------------------------
-// | ESC  | CUT | CPY | PST | CTA | PRN |   |  7  |  8  |  9  |     | INS | DEL |
+// | ESC  | CUT | CPY | PST | CTA | PRN |   |  7  |  8  |  9  | REC | INS | DEL |
 // | CTRL | HME | END |  =  |  -  |  _  |   |  4  |  5  |  6  |     |  UP | "\"  |
 // | SHFT | CTZ |  (  |  )  |  [  |  ]  |   |  1  |  2  |  3  | LFT | DWN | RGT  |
 //                    | ALT  |    | ENT |   | SPC |  0  | ALT |
