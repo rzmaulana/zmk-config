@@ -47,7 +47,7 @@ behaviors {
 //                    | ALT | RSE | ENT |   | SPC | LWR  | ALT |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &bhm LGUI A &bhm LALT S &bhm LSHFT D &bhm LCTRL F &kp G   &kp H &bhm RCTRL J  &bhm RSHFT K &bhm RALT L &bhm RGUI SEMI &kp SQT
+   &kp LCTRL &hm LGUI A &hm LALT S &hm LSHFT D &hm LCTRL F &kp G   &kp H &hm RCTRL J  &hm RSHFT K &hm RALT L &hm RGUI SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                   &mt LALT LGUI &mo 2 &kp RET   &kp SPACE &mo 1 &mt LALT LGUI
                         >;
