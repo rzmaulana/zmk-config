@@ -25,8 +25,7 @@ behaviors {
         };
     };
 
-{
-    behaviors {
+behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -36,7 +35,9 @@ behaviors {
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-    };
+    };    
+{
+    
 
         keymap {
                 compatible = "zmk,keymap";
