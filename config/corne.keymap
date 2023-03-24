@@ -24,7 +24,7 @@
         };
     };
 
- {
+
     combos {
         compatible = "zmk,combos";
         combo_layer {
@@ -33,7 +33,7 @@
             bindings = <&tog 3>;
         };
     };
-};    
+    
 
 
         keymap {
