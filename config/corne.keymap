@@ -37,6 +37,12 @@
         };
     }; 
 
+    combos {
+                compatible = "zmk,combos";
+                      
+                COMBO(tilde, &kp TILDE, 1 2)    
+        };
+
 
         keymap {
                 compatible = "zmk,keymap";
