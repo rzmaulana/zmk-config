@@ -9,6 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 / 
+ 
+
+{
 
  behaviors {
         hm: homerow_mods {
@@ -20,12 +23,8 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-    };
-/
+    }; 
 
-{
-
- 
 
         keymap {
                 compatible = "zmk,keymap";
@@ -43,7 +42,6 @@
                   &mt LALT LGUI &mo 2 &kp RET   &kp SPACE &mo 1 &mt LALT LGUI
                         >;
                 };
-
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // | CAPS |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -71,7 +69,5 @@
                           &trans &trans   &trans   &trans       &kp KP_N0  &trans
                         >;
                 };
-
-                ;
         };
 };
