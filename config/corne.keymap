@@ -11,6 +11,12 @@
 
 / 
 
+
+
+{
+
+#include "combos.dtsi" 
+
 {
     combos {
         compatible = "zmk,combos";
@@ -21,8 +27,6 @@
         };
     };
 };
-
-{
 
  behaviors {
         hm: homerow_mods {
