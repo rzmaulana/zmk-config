@@ -24,11 +24,7 @@
             bindings = <&kp>, <&kp>;
         };
     }; 
-
-
-        keymap {
-        
-        / {
+/ {
     combos {
         compatible = "zmk,combos";
         combo_esc {
@@ -38,6 +34,9 @@
         };
     };
 };
+
+        keymap {
+        
                 compatible = "zmk,keymap";
 
                 default_layer {
