@@ -9,7 +9,20 @@
 #include <dt-bindings/zmk/bt.h>
 
 / 
- 
+
+{
+    combos {
+        compatible = "zmk,combos";
+        combo_layer {
+            timeout-ms = <50>;
+            key-positions = <37 40>;
+            bindings = <&tog 3>;
+        };
+    };
+};
+
+/
+
 {
 
  behaviors {
@@ -23,18 +36,6 @@
             bindings = <&kp>, <&kp>;
         };
     };
-
-
-    combos {
-        compatible = "zmk,combos";
-        combo_layer {
-            timeout-ms = <50>;
-            key-positions = <37 40>;
-            bindings = <&tog 3>;
-        };
-    };
-    
-
 
         keymap {
                 compatible = "zmk,keymap";
