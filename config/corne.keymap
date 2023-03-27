@@ -25,10 +25,6 @@
     continue-list = <UNDERSCORE MINUS SPACE SINGLE_QUOTE DOUBLE_QUOTES EXCLAMATION QUESTION>;
 }; 
 
-&num_word {
-    layers = <3>;  // replace NUM by the location of numbers layer
-};
-
 / 
  
 
