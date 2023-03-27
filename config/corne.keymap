@@ -76,7 +76,7 @@
                 COMBO(minus, &kp KP_MINUS, 19 31, DEFAULT) 
                 COMBO(multiply, &kp KP_MULTIPLY, 8 20, DEFAULT) 
                 COMBO(divide, &kp KP_DIVIDE, 20 32, DEFAULT) 
-                COMBO(equal, &kp KP_EQUAL, 9 21, DEFAULT) 
+                COMBO(equal, &kp EQUAL, 9 21, DEFAULT) 
                 COMBO(underscore, &kp UNDERSCORE, 21 33, DEFAULT) 
 
                 /* Navigation */     
