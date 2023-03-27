@@ -44,6 +44,10 @@
                 COMBO(tilde, &kp TILDE, 1 2)    
         };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS SPACE SINGLE_QUOTE DOUBLE_QUOTES EXCLAMATION QUESTION>;
+};
+
         keymap {
                 compatible = "zmk,keymap";
 
