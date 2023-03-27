@@ -21,12 +21,8 @@
     layers = <0>; \
   };
 
-&caps_word {
-    continue-list = <UNDERSCORE MINUS SPACE SINGLE_QUOTE DOUBLE_QUOTES EXCLAMATION QUESTION BACKSPACE DELETE DOT COMMA>;
-}; 
-
-/ 
  
+
 {
 
  behaviors {
@@ -38,7 +34,7 @@
             quick-tap-ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-
+        };
     }; 
 
     combos {
