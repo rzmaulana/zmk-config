@@ -52,6 +52,11 @@
 
     combos {
                 compatible = "zmk,combos";
+
+                /* Chop Column 6 */     
+                COMBO(escape, &kp ESC, 2 3, DEFAULT) 
+                COMBO(tab, &kp TAB, 3 4, DEFAULT) 
+
                       
                 /* Text processing */
                 COMBO(cut, &kp LC(X), 25 26, DEFAULT) 
@@ -63,6 +68,23 @@
                 COMBO(right_par, &kp RPAR, 8 9, DEFAULT) 
                 COMBO(left_bkt, &kp LBKT, 19 20, DEFAULT) 
                 COMBO(right_bkt, &kp RBKT, 20 21, DEFAULT) 
+                COMBO(less_than, &kp LESS_THAN, 31 32, DEFAULT) 
+                COMBO(greater_than, &kp GREATER_THAN, 32 33, DEFAULT) 
+
+                /* Numerical Operations */     
+                COMBO(plus, &kp KP_PLUS, 7 19, DEFAULT) 
+                COMBO(minus, &kp KP_MINUS, 19 31, DEFAULT) 
+                COMBO(multiply, &kp KP_MULTIPLY, 8 20, DEFAULT) 
+                COMBO(divide, &kp KP_DIVIDE, 20 32, DEFAULT) 
+                COMBO(equal, &kp KP_EQUAL, 9 21, DEFAULT) 
+                COMBO(underscore, &kp UNDERSCORE, 21 33, DEFAULT) 
+
+                /* Navigation */     
+                COMBO(page_up, &kp PAGE_UP, 14 15, DEFAULT) 
+                COMBO(page_down, &kp PAGE_DOWN, 15 16, DEFAULT) 
+                COMBO(home, &kp HOME, 13 14, DEFAULT) 
+                COMBO(end, &kp END, 16 17, DEFAULT) 
+
                 
         };
 
