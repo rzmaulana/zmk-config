@@ -22,12 +22,8 @@
   };
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS SPACE SINGLE_QUOTE DOUBLE_QUOTES EXCLAMATION QUESTION>;
+    continue-list = <UNDERSCORE MINUS SPACE SINGLE_QUOTE DOUBLE_QUOTES EXCLAMATION QUESTION BACKSPACE DELETE DOT COMMA>;
 }; 
-
-&num_word {
-    layers = <3>;  // replace NUM by the location of numbers layer
-};
 
 / 
  
@@ -43,6 +39,14 @@
             quick-tap-ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+
+        num_word: behavior_num_word {
+            compatible = "zmk,behavior-caps-word";
+            label = "NUM_WORD";
+            #binding-cells = <0>;
+                        layers = <3>;                                                       // insert location of numbers layer here
+            continue-list = <BACKSPACE DELETE DOT COMMA SPACE SINGLE_QUOTE DOUBLE_QUOTES>;  // adjust as desired
+                        ignore-numbers;                                                     // numbers don't deactivate the layer
         };
     }; 
 
