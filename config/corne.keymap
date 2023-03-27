@@ -38,10 +38,8 @@
         };
     }; 
 
-\ 
 
-{
-    behaviors {
+ behaviors {
                 num_word: behavior_num_word {
             compatible = "zmk,behavior-caps-word";
             label = "NUM_WORD";
@@ -51,7 +49,7 @@
                         ignore-numbers;                                // numbers don't deactivate the layer
         };
     };
-};
+
 
 
     combos {
