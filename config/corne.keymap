@@ -19,7 +19,7 @@
 #define DEFAULT 0
 #define LOWER 1
 #define RAISE 2
-#define NUM 3
+#define GAMING 3
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
@@ -30,7 +30,7 @@
   };
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS SPACE SINGLE_QUOTE DOUBLE_QUOTES EXCLAMATION QUESTION>;
+    continue-list = <UNDERSCORE MINUS SPACE SINGLE_QUOTE DOUBLE_QUOTES EXCLAMATION QUESTION BACKSPACE>;
 }; 
 
 / 
@@ -83,6 +83,8 @@
                 COMBO(num_multiply, &kp KP_MULTIPLY, 8 20, DEFAULT) 
                 COMBO(num_divide, &kp KP_DIVIDE, 20 32, DEFAULT) 
                 COMBO(num_underscore, &kp UNDERSCORE, 21 33, DEFAULT) 
+                COMBO(num_amp, &kp AMPS, 6 18, DEFAULT) 
+                COMBO(num_pipe, &kp PIPE, 18 30, DEFAULT) 
 
                 /* Navigation */     
                 COMBO(page_up, &kp PAGE_UP, 14 15, DEFAULT) 
@@ -90,7 +92,9 @@
                 COMBO(home, &kp HOME, 13 14, DEFAULT) 
                 COMBO(end, &kp END, 16 17, DEFAULT) 
 
-                
+                /* Toggle Layer */     
+                COMBO(page_up, &tog GAMING, 37 40, DEFAULT GAMING) 
+                            
         };
 
 
@@ -139,17 +143,17 @@
                         >;
                 };
 
-                num_layer {
- // -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |   |  7  |  8  |  9  |     |     | DEL  |
-// |      |     |     |     |     |     |   |  4  |  5  |  6  |     |     | "\"  |
-// |      |     |     |     |     |     |   |  1  |  2  |  3  |     |     | RGT  |
-//                    |     |     |     |   | SPC |  0  | ALT |
+                gaming_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT  |
+//                    | ALT | RSE | ENT |   | SPC | LWR  | ALT |
                         bindings = <
-   &kp ESC      &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LC(A)       &kp PSCRN       &kp KP_N7 &kp KP_N8  &kp KP_N9 &kp LA(LG(R)) &kp INS &kp DEL
-   &kp LCTRL &kp HOME   &kp END &kp EQUAL       &kp MINUS   &kp UNDER   &kp KP_N4 &kp KP_N5 &kp KP_N6        &trans &kp UP &kp BSLH
-   &kp LSHFT &kp LC(Z)   &kp LPAR       &kp RPAR   &kp LBKT     &kp RBKT      &kp KP_N1 &kp KP_N2  &kp KP_N3        &kp LEFT &kp DOWN &kp RIGHT
-                          &trans &trans   &trans   &trans       &kp KP_N0  &trans
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K &kp L &kp SEMI &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+                  &mt LALT LGUI &mo RAISE &kp RET   &kp SPACE &mo LOWER &mt LALT LGUI
                         >;
                 };
         };
