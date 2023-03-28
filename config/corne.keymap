@@ -17,9 +17,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define GAMING 1
+#define GAMING 1 // this layer is basically the same like default, just that the hrm is removed to avoid getting invoked while gaming due to rapid presses 
 #define LOWER 2
-#define RAISE 3
+#define RAISE 3 
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
