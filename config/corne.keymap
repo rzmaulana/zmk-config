@@ -73,7 +73,7 @@
 
                 /* Numerical Operations */     
                 COMBO(num_equal, &kp EQUAL, 9 21, DEFAULT)
-                COMBO(num_excl, &kp EXCL, 1 11, DEFAULT)
+                COMBO(num_excl, &kp EXCLAMATION, 1 11, DEFAULT)
                 COMBO(num_at, &kp AT, 2 14, DEFAULT)
                 COMBO(num_hash, &kp HASH, 3 15, DEFAULT)
                 COMBO(num_dollar, &kp DOLLAR, 4 16, DEFAULT)
@@ -85,6 +85,7 @@
                 COMBO(num_underscore, &kp UNDERSCORE, 21 33, DEFAULT) 
                 COMBO(num_amp, &kp AMPS, 6 18, DEFAULT) 
                 COMBO(num_pipe, &kp PIPE, 18 30, DEFAULT) 
+                COMBO(num_tilde, &kp TILDE, 17 29, DEFAULT) 
 
                 /* Navigation */     
                 COMBO(page_up, &kp PAGE_UP, 14 15, DEFAULT) 
