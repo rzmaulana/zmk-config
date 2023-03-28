@@ -72,18 +72,18 @@
                 COMBO(greater_than, &kp GREATER_THAN, 32 33, DEFAULT) 
 
                 /* Numerical Operations */     
+                COMBO(num_equal, &kp EQUAL, 9 21, DEFAULT)
                 COMBO(num_plus, &kp KP_PLUS, 7 19, DEFAULT) 
                 COMBO(num_minus, &kp KP_MINUS, 19 31, DEFAULT) 
                 COMBO(num_multiply, &kp KP_MULTIPLY, 8 20, DEFAULT) 
                 COMBO(num_divide, &kp KP_DIVIDE, 20 32, DEFAULT) 
-                COMBO(num_eql, &kp EQUAL, 9 21, DEFAULT) 
                 COMBO(num_underscore, &kp UNDERSCORE, 21 33, DEFAULT) 
 
                 /* Navigation */     
                 COMBO(page_up, &kp PAGE_UP, 14 15, DEFAULT) 
                 COMBO(page_down, &kp PAGE_DOWN, 15 16, DEFAULT) 
                 COMBO(home, &kp HOME, 13 14, DEFAULT) 
-                COMBO(end, &kp END, 16 17, DEFAULT) w
+                COMBO(end, &kp END, 16 17, DEFAULT) 
 
                 
         };
