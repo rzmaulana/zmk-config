@@ -73,6 +73,11 @@
 
                 /* Numerical Operations */     
                 COMBO(num_equal, &kp EQUAL, 9 21, DEFAULT)
+                COMBO(num_excl, &kp EXCL, 1 11, DEFAULT)
+                COMBO(num_at, &kp AT, 2 14, DEFAULT)
+                COMBO(num_hash, &kp HASH, 3 15, DEFAULT)
+                COMBO(num_dollar, &kp DOLLAR, 4 16, DEFAULT)
+                COMBO(num_percent, &kp PERCENT, 5 17, DEFAULT)
                 COMBO(num_plus, &kp KP_PLUS, 7 19, DEFAULT) 
                 COMBO(num_minus, &kp KP_MINUS, 19 31, DEFAULT) 
                 COMBO(num_multiply, &kp KP_MULTIPLY, 8 20, DEFAULT) 
