@@ -17,9 +17,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define LOWER 1
-#define RAISE 2
-#define GAMING 3
+#define GAMING 1
+#define LOWER 2
+#define RAISE 3
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
@@ -94,7 +94,7 @@
                 COMBO(end, &kp END, 16 17, DEFAULT) 
 
                 /* Toggle Layer */     
-                COMBO(page_up, &tog GAMING, 37 40, DEFAULT GAMING) 
+                COMBO(page_up, &tog 1, 37 40, DEFAULT GAMING) 
                             
         };
 
@@ -113,10 +113,24 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp LCTRL &hm LGUI A &hm LALT S &hm LSHFT D &hm LCTRL F &kp G   &kp H &hm RCTRL J  &hm RSHFT K &hm RALT L &hm RGUI SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                  &mt LALT LGUI &mo RAISE &kp RET   &kp SPACE &mo LOWER &mt LALT LGUI
+                  &mt LALT LGUI &mo 3 &kp RET   &kp SPACE &mo 2 &mt LALT LGUI
                         >;
                 };
-                
+
+                 gaming_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT  |
+//                    | ALT | RSE | ENT |   | SPC | LWR  | ALT |
+                        bindings = <
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K &kp L &kp SEMI &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+                  &mt LALT LGUI &mo 3 &kp RET   &kp SPACE &mo 2 &mt LALT LGUI
+                        >;
+                };
+
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // | CAPS |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -128,20 +142,6 @@
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp F11   &kp F12      &trans      &kp C_VOL_UP    &kp C_VOL_DN &kp C_MUTE
    &kp LSHFT  &kp F1    &kp F2  &kp F3  &kp F4  &kp F5  &kp F6   &kp F7 &kp F8  &kp F9  &kp F10 &trans
                                    &trans     &trans       &trans      &trans  &trans   &trans
-                        >;
-                };
-
-                gaming_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT  |
-//                    | ALT | RSE | ENT |   | SPC | LWR  | ALT |
-                        bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K &kp L &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                  &mt LALT LGUI &mo RAISE &kp RET   &kp SPACE &mo LOWER &mt LALT LGUI
                         >;
                 };
 
