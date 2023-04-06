@@ -94,7 +94,7 @@
                 COMBO(end, &kp END, 16 17, DEFAULT) 
 
                 /* Toggle Layer */     
-                COMBO(page_up, &tog 1, 37 40, DEFAULT GAMING) 
+                COMBO(tog_layer, &tog 1, 37 40, DEFAULT GAMING) 
                             
         };
 
