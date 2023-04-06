@@ -18,7 +18,7 @@
 
 #define DEFAULT 0
 #define GAMING 1 // this layer is basically the same like default, just that the hrm is removed to avoid getting invoked while gaming due to rapid presses
-#define LOWER 2
+#define LOWER 2 // this is a test push to see if my codes are wrong or something else
 #define RAISE 3 
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
