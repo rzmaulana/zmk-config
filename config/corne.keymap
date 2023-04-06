@@ -23,9 +23,7 @@
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
-    //timeout-ms = <50>; \ // commenting this out
-    quick-tap-ms = <200>; // adding this
-    flavor = "tap-preferred"; // adding this
+    timeout-ms = <200>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
