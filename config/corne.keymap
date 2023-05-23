@@ -21,6 +21,9 @@
 #define LOWER 2 // this is a test push to see if my codes are wrong or something else
 #define RAISE 3 
 
+#define TAPPING_TERM 200
+#define QUICK_TAP    100
+
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
     timeout-ms = <25>; \
