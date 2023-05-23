@@ -135,7 +135,7 @@ COMBO(escape, &kp ESC, 1 2, DEFAULT)
                 COMBO(btsel2,&bt BT_SEL 1, 25 34, DEFAULT) 
 
                 /* Lock Layer */
-                COMBO(lock,&tog OTH, 4 5, DEFAULT) 
+                COMBO(lock,&tog LOWER, 4 5, DEFAULT) 
                 COMBO(unlock,&tog DEFAULT, 14 15, DEFAULT)
                             
         };
