@@ -103,49 +103,40 @@
 
     combos {
                 compatible = "zmk,combos";
+COMBO(escape, &kp ESC, 1 2, DEFAULT) 
+                COMBO(tab, &kp TAB, 2 3, DEFAULT) 
+                COMBO(page_up, &kp PAGE_UP, 3 4, DEFAULT) 
+                COMBO(page_down, &kp PAGE_DOWN, 4 5, DEFAULT) 
 
-                /* Chop Column 6 */     
-                COMBO(escape, &kp ESC, 2 3, DEFAULT) 
-                COMBO(tab, &kp TAB, 3 4, DEFAULT) 
+                COMBO(exclamation,&kp EXCL, 1 13, DEFAULT) 
+                COMBO(alias,&kp AT, 2 14, DEFAULT)
+                COMBO(hash,&kp HASH, 3 15, DEFAULT) 
+                COMBO(dollar,&kp DOLLAR, 3 15, DEFAULT) 
+                COMBO(percent,&kp PERCENT, 4 16, DEFAULT) 
+                COMBO(caret,&kp CARET, 5 17, DEFAULT) 
+                COMBO(ampersand,&kp AMPS, 6 18, DEFAULT) 
+                COMBO(asterisk,&kp ASTRK, 7 19, DEFAULT) 
+                COMBO(leftpar,&kp LPAR, 8 20, DEFAULT) 
+                COMBO(rightpar,&kp RPAR, 9 21, DEFAULT)
+                
+                COMBO(f1,&kp F1, 13 25, DEFAULT) 
+                COMBO(f2,&kp F2, 14 26, DEFAULT)
+                COMBO(f3,&kp F3, 15 27, DEFAULT) 
+                COMBO(f4,&kp F4, 16 28, DEFAULT) 
+                COMBO(f5,&kp F5, 17 29, DEFAULT) 
+                COMBO(f6,&kp F6, 18 30, DEFAULT) 
+                COMBO(f7,&kp F7, 19 31, DEFAULT) 
+                COMBO(f8,&kp F8, 20 32, DEFAULT) 
+                COMBO(f9,&kp F9, 21 33, DEFAULT) 
+                COMBO(f10,&kp F10, 22 34, DEFAULT) 
+                 
+                COMBO(btclr,&bt BT_CLR, 1 10, DEFAULT)
+                COMBO(btsel1,&bt BT_SEL 0, 13 22, DEFAULT) 
+                COMBO(btsel2,&bt BT_SEL 1, 25 34, DEFAULT) 
 
-                      
-                /* Text processing */
-                COMBO(cut, &kp LC(X), 25 26, DEFAULT) 
-                COMBO(copy, &kp LC(C), 26 27, DEFAULT) 
-                COMBO(paste, &kp LC(V)E, 27 28, DEFAULT) 
-
-                /* Brackets */     
-                COMBO(left_par, &kp LPAR, 7 8, DEFAULT) 
-                COMBO(right_par, &kp RPAR, 8 9, DEFAULT) 
-                COMBO(left_bkt, &kp LBKT, 19 20, DEFAULT) 
-                COMBO(right_bkt, &kp RBKT, 20 21, DEFAULT) 
-                COMBO(less_than, &kp LESS_THAN, 31 32, DEFAULT) 
-                COMBO(greater_than, &kp GREATER_THAN, 32 33, DEFAULT) 
-
-                /* Numerical Operations */     
-                COMBO(num_equal, &kp EQUAL, 9 21, DEFAULT)
-                COMBO(num_apos, &kp EXCLAMATION, 1 13, DEFAULT)
-                COMBO(num_at, &kp AT, 2 14, DEFAULT)
-                COMBO(num_hash, &kp HASH, 3 15, DEFAULT)
-                COMBO(num_dollar, &kp DOLLAR, 4 16, DEFAULT)
-                COMBO(num_percent, &kp PERCENT, 5 17, DEFAULT)
-                COMBO(num_plus, &kp KP_PLUS, 7 19, DEFAULT) 
-                COMBO(num_minus, &kp KP_MINUS, 19 31, DEFAULT) 
-                COMBO(num_multiply, &kp KP_MULTIPLY, 8 20, DEFAULT) 
-                COMBO(num_divide, &kp KP_DIVIDE, 20 32, DEFAULT) 
-                COMBO(num_underscore, &kp UNDERSCORE, 21 33, DEFAULT) 
-                COMBO(num_amp, &kp AMPS, 6 18, DEFAULT) 
-                COMBO(num_pipe, &kp PIPE, 18 30, DEFAULT) 
-                COMBO(num_tilde, &kp TILDE, 17 29, DEFAULT) 
-
-                /* Navigation */     
-                COMBO(page_up, &kp PAGE_UP, 14 15, DEFAULT) 
-                COMBO(page_down, &kp PAGE_DOWN, 15 16, DEFAULT) 
-                COMBO(home, &kp HOME, 13 14, DEFAULT) 
-                COMBO(end, &kp END, 16 17, DEFAULT) 
-
-                /* Toggle Layer */     
-                COMBO(tog_layer, &tog 1, 37 40, DEFAULT GAMING) 
+                /* Lock Layer */
+                COMBO(lock,&tog OTH, 4 5, DEFAULT) 
+                COMBO(unlock,&tog DEFAULT, 14 15, DEFAULT)
                             
         };
 
