@@ -40,6 +40,16 @@
     continue-list = <UNDERSCORE MINUS SPACE SINGLE_QUOTE DOUBLE_QUOTES EXCLAMATION QUESTION BACKSPACE>;
 }; 
 
+&lt {
+	flavor = "tap-preferred";
+	tapping-term-ms = <TAPPING_TERM>;
+};
+
+&mt {
+	flavor = "tap-preferred";
+	tapping-term-ms = <TAPPING_TERM>;
+};
+
 / 
  
 
