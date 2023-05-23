@@ -21,6 +21,10 @@
 #define LOWER 2 // this is a test push to see if my codes are wrong or something else
 #define RAISE 3 
 
+#define KEYS_L 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29  // left-hand keys
+#define KEYS_R 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 // right-hand keys
+#define THUMBS 36 37 38 39 40 41   
+
 #define TAPPING_TERM 200
 #define QUICK_TAP    100
 
