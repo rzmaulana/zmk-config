@@ -17,7 +17,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define GAMING 1 // this layer is basically the same like default, just that the hrm is removed to avoid getting invoked while gaming due to rapid presses=
 #define LOWER 2 // this is a test push to see if my codes are wrong or something else
 #define RAISE 3 
 
@@ -103,7 +102,8 @@
 
     combos {
                 compatible = "zmk,combos";
-COMBO(escape, &kp ESC, 1 2, DEFAULT) 
+
+                COMBO(escape, &kp ESC, 1 2, DEFAULT) 
                 COMBO(tab, &kp TAB, 2 3, DEFAULT) 
                 COMBO(page_up, &kp PAGE_UP, 3 4, DEFAULT) 
                 COMBO(page_down, &kp PAGE_DOWN, 4 5, DEFAULT) 
@@ -135,8 +135,8 @@ COMBO(escape, &kp ESC, 1 2, DEFAULT)
                 COMBO(btsel2,&bt BT_SEL 1, 25 34, DEFAULT) 
 
                 /* Lock Layer */
-                COMBO(lock,&tog LOWER, 4 5, DEFAULT) 
-                COMBO(unlock,&tog DEFAULT, 14 15, DEFAULT)
+                COMBO(lock,&tog LOWER, 5 6, DEFAULT) 
+                COMBO(unlock,&tog DEFAULT, 17 18, DEFAULT)
                             
         };
 
@@ -159,36 +159,22 @@ COMBO(escape, &kp ESC, 1 2, DEFAULT)
             >;
                 };
 
-                 gaming_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT  |
-//                    | ALT | RSE | ENT |   | SPC | LWR  | ALT |
-                        bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K &kp L &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                  &mt LALT LGUI &mo 3 &kp RET   &kp SPACE &mo 2 &mt LALT LGUI
-                        >;
-                };
-
                 lower_layer {
-// -----------------------------------------------------------------------------------------
-// | CAPS |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCL | BT1 | BT2 | BT3 | BT4 | BT5 |   | F11 | F12 |     | vup | vdw | mute |
-// | SHFT |  F1 |  F2 |  F3 | F4  | F5  |   | F6  | F7  | F8  | F9  | F10 | SHFT |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-   &caps_word    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp F11   &kp F12      &trans      &kp C_VOL_UP    &kp C_VOL_DN &kp C_MUTE
-   &kp LSHFT  &kp F1    &kp F2  &kp F3  &kp F4  &kp F5  &kp F6   &kp F7 &kp F8  &kp F9  &kp F10 &trans
-                                   &trans     &trans       &trans      &trans  &trans   &trans
-                        >;
+                    bindings = <
+//╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮       ╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮
+         &none    &none    &none     &none     &none &none                            &none    &none    &none     &none     &none &none
+//├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
+         &none    &none    &none     &none     &none &none                            &none    &none    &none     &none     &none &none
+//├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
+         &none    &none    &none     &none     &none &none                            &none    &none    &none     &none     &none &none
+//╰────────────┴─────────────┼─────────────┼─────────────┼──────────╯       ╰────────────┼─────────────┼─────────────┼─────────────┼──────────╯
+                 &trans        &trans        &trans                            &trans                    &trans     &trans
+ //            ╰─────────────┴─────────────┴────────────────────────╯       ╰──────────────────────────┴─────────────┴─────────────╯
+               >;
                 };
 
                 raise_layer {
-            bindings = <
+                    bindings = <
 //╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮       ╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮
     &kp ESC &kp LC(X)    &kp LC(C)     &kp LC(V)     &kp LC(A)    &kp PSCRN            &kp KP_N7    &kp KP_N8    &kp KP_N9     &kp INS       &kp DEL &none
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
