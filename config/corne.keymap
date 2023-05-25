@@ -110,7 +110,7 @@
                 COMBO(exclamation,&kp EXCL, 1 13, DEFAULT) 
                 COMBO(alias,&kp AT, 2 14, DEFAULT)
                 COMBO(hash,&kp HASH, 3 15, DEFAULT) 
-                COMBO(dollar,&kp DOLLAR, 4 16 DEFAULT) 
+                COMBO(dollar,&kp DOLLAR, 4 16,DEFAULT) 
                 COMBO(percent,&kp PERCENT, 5 17, DEFAULT) 
                 COMBO(caret,&kp CARET, 6 18, DEFAULT) 
                 COMBO(ampersand,&kp AMPS, 7 19, DEFAULT) 
