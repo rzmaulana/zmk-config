@@ -133,6 +133,8 @@
                 COMBO(btclr,&bt BT_CLR, 1 10, DEFAULT)
                 COMBO(btsel1,&bt BT_SEL 0, 13 22, DEFAULT) 
                 COMBO(btsel2,&bt BT_SEL 1, 25 34, DEFAULT) 
+
+                COMBO(gaming,&tog GAME, 38 39, DEFAULT GAME)
                             
         };
 
