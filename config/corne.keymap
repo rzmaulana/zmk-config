@@ -18,6 +18,7 @@
 
 #define DEFAULT 0
 #define RAISE 1 // this is a test push to see if my codes are wrong or something else
+#define GAME 2 // this is a test push to see if my codes are wrong or something else
 
 #define KEYS_L 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29  // left-hand keys
 #define KEYS_R 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 // right-hand keys
@@ -174,6 +175,19 @@
                >;
                 };
 
+                game_layer {  
+                        bindings = <
+//╭───────┬──────────┬─────────────┬─────────────┬─────────────┬──────────╮       ╭──────────┬──────────┬─────────────┬─────────────┬─────────────┬──────────╮
+    &none     &kp Q       &kp W         &kp E         &kp R       &kp T             &kp Y       &kp U        &kp I         &kp O        &kp P        &none
+//├───────┼──────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├──────────┼──────────┼─────────────┼─────────────┼─────────────┼──────────┤
+    &none     &kp A       &kp S         &kp D         &kp F       &kp G             &kp H    &hmr RCTRL J &hmr RSHFT K  &hmr RALT L  &hmr RGUI APOS  &none
+//├───────┼──────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├──────────┼──────────┼─────────────┼─────────────┼─────────────┼──────────┤
+    &none     &kp Z       &kp X         &kp C         &kp V       &kp B             &kp N       &kp M      &kp COMMA      &kp DOT      &kp FSLH      &none
+//╰───────┴──────────┴─────────────┼─────────────┼─────────────┼──────────╯       ╰──────────┴──────────┴─────────────┼─────────────┼─────────────┼──────────╯
+                                     &mt LALT LGUI   &mo RAISE    &kp BSPC         &kp SPACE   &kp ENTER  &kp KP_NUM  
+ // 
+            >;
+                };
                 
         };
 };
