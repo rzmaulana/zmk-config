@@ -134,7 +134,7 @@
                 COMBO(btsel1,&bt BT_SEL 0, 13 22, DEFAULT) 
                 COMBO(btsel2,&bt BT_SEL 1, 25 34, DEFAULT) 
 
-                COMBO(gaming,&tog GAME, 29 30, DEFAULT GAME)
+                COMBO(gaming,&tog 2, 29 30, DEFAULT GAME)
               
                             
         };
@@ -159,7 +159,7 @@
 //├───────┼──────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├──────────┼──────────┼─────────────┼─────────────┼─────────────┼──────────┤
     &none     &kp Z       &kp X         &kp C         &kp V       &kp B             &kp N       &kp M      &kp COMMA      &kp DOT      &kp FSLH      &none
 //╰───────┴──────────┴─────────────┼─────────────┼─────────────┼──────────╯       ╰──────────┴──────────┴─────────────┼─────────────┼─────────────┼──────────╯
-                                     &mt LALT LGUI   &mo RAISE    &kp BSPC         &kp SPACE   &kp ENTER  &kp KP_NUM  
+                                     &mt LALT LGUI   &mo 1    &kp BSPC         &kp SPACE   &kp ENTER  &kp KP_NUM  
  // 
             >;
                 };
@@ -187,7 +187,7 @@
 //├───────┼──────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├──────────┼──────────┼─────────────┼─────────────┼─────────────┼──────────┤
     &none     &kp Z       &kp X         &kp C         &kp V       &kp B             &kp N       &kp M      &kp COMMA      &kp DOT      &kp FSLH      &none
 //╰───────┴──────────┴─────────────┼─────────────┼─────────────┼──────────╯       ╰──────────┴──────────┴─────────────┼─────────────┼─────────────┼──────────╯
-                                     &mt LALT LGUI   &mo RAISE    &kp BSPC         &kp SPACE   &kp ENTER  &kp KP_NUM  
+                                     &mt LALT LGUI   &mo 1    &kp BSPC         &kp SPACE   &kp ENTER  &kp KP_NUM  
  // 
             >;
                 };
