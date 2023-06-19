@@ -134,8 +134,8 @@
                 COMBO(btsel1,&bt BT_SEL 0, 13 22, DEFAULT) 
                 COMBO(btsel2,&bt BT_SEL 1, 25 34, DEFAULT) 
 
-                COMBO(gaming,&tog GAME, 29 30, DEFAULT)
-                COMBO(default,&tog DEFAULT, 29 30, GAME)
+                COMBO(gaming,&tog GAME, 29 30, DEFAULT GAME)
+              
                             
         };
 
